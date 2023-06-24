@@ -13,3 +13,15 @@
    -
    1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz
 """
+count = 1
+
+for i in range (20):
+    if (count % 3 == 0) & (count % 5 == 0):
+        print('FizzBuzz', end=' ')
+    elif count % 3 == 0:
+        print('Fizz', end=' ')
+    elif count % 5 == 0:
+        print('Buzz', end=' ')
+    else:
+        print(count, end=' ')
+    count = count + 1
